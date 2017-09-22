@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="var" path="BIB"/>
+	<classpathentry kind="var" path="BIB/jdom.jar"/>
+	<classpathentry kind="var" path="BIB/miglayout-3.5.5-swing.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

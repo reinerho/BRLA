@@ -3,6 +3,8 @@ package gui.control;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.HashMap;
@@ -50,6 +52,7 @@ public class MainControl {
 			}
 
 		});
+		maingui.addKeyListener(mainkey);
 		FileMenuControl.getInstance();
 		ObjectMenuControl.getInstance();
 		HelpMenuControl.getInstance();
@@ -221,4 +224,32 @@ public class MainControl {
 		}
 		return root;
 	}
+	
+	private KeyListener mainkey = new KeyListener() {
+
+		@Override
+		public void keyPressed(KeyEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void keyReleased(KeyEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void keyTyped(KeyEvent e) {
+			keyAction(e);
+		}
+	};
+	
+	private void keyAction(KeyEvent e) {
+		int key = e.getKeyCode();
+		if (key == KeyEvent.VK_F1) {
+			//TODO Helpaction
+		}
+	}
+	
 }
